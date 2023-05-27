@@ -1,0 +1,46 @@
+<%- include("partials/header") %>
+
+<div class="services" id="services">
+  <div class="services-page">
+      <div class="services-heading">
+          <h1>Our Services</h1>
+      </div>
+
+      <div class="services-inner-page">
+          <div class="col-6 left-services-page">
+              <div class="service-head">
+                  <h1><%= cargoShipmentTitle %></h1>
+              </div>
+              <p>
+                  <%= cargoShipmentDescription %>
+              </p>
+
+              <div class="read-more-btn services-btn">
+                  <a href="#"><%= cargoShipmentButton %></a>    
+              </div>
+          </div>
+          <div class="col-6 right-services-page">
+              <img src="/images/images/highways.jpg">
+          </div>
+      </div>
+
+      <div class="services-inner-page second-service-page">
+          <div class="col-6 left-services-page">
+              <img src="/images/images/open-road.jpg">
+          </div>
+
+          <div class="col-6 right-services-page left-padding">
+              <div class="service-head">
+                  <h1><%= instantDeliveryTitle %></h1>
+              </div>
+              <p><%= instantDeliveryDescription %></p>
+
+              <div class="read-more-btn services-btn">
+                  <a href="#"><%= instantDeliveryButton %></a>    
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+<%- include("partials/footer")-%>

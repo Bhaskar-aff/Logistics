@@ -1,0 +1,24 @@
+  <%- include("partials/header")-%>
+  <div class="about" id="about">
+    <div class="about-heading">
+        <h1><%= aboutHeading %></h1>
+    </div>
+    <div class="about-page">
+        <div class="inner-about-page">
+            <div class="col-6 left-about-page">
+                <div class="about-info">
+                    <p><%= aboutDescription %></p>
+                    <div class="read-more-btn about-btn">
+                        <a href="/files"><%= galleryLink %></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 right-about-page">
+                <img src="<%= aboutImage %>">
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <%- include("partials/footer")-%>
+  

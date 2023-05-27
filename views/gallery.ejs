@@ -1,0 +1,48 @@
+<%- include("partials/header") -%>
+<style>
+  .services-inner-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-6 {
+    flex: 0 0 45%;
+  }
+
+  .col-6 img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+<div class="services" id="services">
+  <div class="services-page">
+    <div class="services-heading">
+      <h1>Gallery</h1>
+    </div>
+
+    <div class="services-inner-page">
+      <div class="col-6">
+        <img src="<%= image1 %>" alt="Image 1">
+      </div>
+      <div class="col-6">
+        <h1>Stuck in Traffic?</h1>
+        <p>Dont worry we got you.</p>
+      </div>
+    </div>
+
+    <div class="services-inner-page">
+      <div class="col-6">
+        <h1>Very Far?</h1>
+        <p>Dont worry we got you.</p>
+      </div>
+      <div class="col-6">
+        <img src="<%= image2 %>" alt="Image 2">
+      </div>
+    </div>
+
+  </div>
+</div>
+<%- include("partials/footer") -%>
+

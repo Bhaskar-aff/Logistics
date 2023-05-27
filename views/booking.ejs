@@ -1,0 +1,62 @@
+<%- include("partials/header")-%>
+<body>
+
+    <style>
+        form{
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            min-height: 70vh;
+        }
+        .input{
+            width: 100%;
+            margin: 5px;
+        }
+        input{
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+        }
+        button{
+            padding: 15px 20px ;
+            border: none;
+            background-color: #fff;
+            margin-left: 5px;
+        }
+    </style>
+    <div class="booking-landing-page">
+        <div class="booking-page">
+            <div class="booking">
+                <a href="/" class="back-btn">Back</a>
+
+                  <div class="form">
+                      <div class="inner-wrapper">
+                          <form action="/submit" method="post">
+                              <div class="input">
+                                  <input type="text" placeholder="Name">
+                              </div>
+
+                              <div class="input">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="Date">
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="Location">
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="Message">
+                            </div>
+                            <div class="btn">
+                                <button>Submit</button>
+                            </div>
+                          </form>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>        
+    </div>
+    <%- include("partials/footer")-%>
